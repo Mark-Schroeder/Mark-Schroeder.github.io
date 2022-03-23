@@ -113,10 +113,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
 <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
   <div class="w3-content">
-    <div class="w3-third w3-center">
 
-
-    </div>
 
     <div class="w3-center">
      
@@ -134,22 +131,48 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
 <div  class="w3-center">
   <h1>The Automatic Picture Printer</h1>
-</div>
-
-<div class="w3-center">
+  <br>
+<div class="w3-center, w3-content">
+  <h4>Overview</h4>
   <p>The Automatic picture printer will be a Windows Form Application that gives a user three options (3 buttons). The options would be: “Cat”, “Dog” and “NASA”. When the user clicks on one of these options, the program will use Application Programming Interfaces (API) to fetch images of a cat, dog or of space (depending on which button they select), from the internet. This (some-what random) image would then directly print to the user’s default printer. This would be a fun surprise when it comes out of the printer as the user does not fully know what to expect, giving an element of surprise!</p>
+  <br>
+  <h4>Motivation</h4>
+  <p>Weiss et al. (2012) found that generally, people have an interest in the way dogs look. This in addition to the element of surprise will hopefully make an exiting application that users will love. Additionally, this application would allow the user to see something cute and or inspiring in the real world with just one click of a button. By doing this, people who use this application daily, will hopefully have a smile on their face when they see an image of an adorable puppy, or a deep sense of awe when they see an image of deep space. This has the potential to bring positivity to some one’s day, and hopefully excite them about space technology and exploration. </p>
+  <br>
+  <h4>Description</h4>
+  <p>The application will be a Windows Form Application written in C# that would be available to the public through a download link on a website or the Microsoft store. As discussed earlier, when the user opens the application, they will have options for what sort of image they want to receive, and when they select a button, the app will search the web for an appropriate image. The application will search through existing databases with the images and any other relevant information, request it, decode it (if needed) and send it to the user’s default printer. The application would give the user a message regarding whether the execution of the program was successful or not. In the event of the application failing, the app should parse an error message to the user through a message box or a printout onto the existing window.  A possible drawback of the app is that many will want to have more options to choose from. This can be combatted by being open to feedback from users and by asking for reviews, for example, doing surveys, etc. </p>
+  <h4>Tools and Technology</h4> 
+  <p>To build this I will use Visual Studio to create the Windows Form App. One of the reasons I like Visual Studio is because I find it easy to prototype different layouts of forms. This gives me flexibility when designing, creating, and rapidly iterating through ideas for the product. I can easily place and program each button and change functionality of each attribute very quickly. Beyond the application that the user will see will be code that executes the user’s input. The language I have chosen to use for this is C# (pronounced ‘C sharp’), ‘a modern, object-oriented, and type-safe programming language’ (Microsoft 2022, para. 1). Because C# is regularly updated to support up and coming coding and design practices (Microsoft 2022), I am confident that the Automatic Picture Printer will be easily maintained and kept up to date with modern systems. C# can also ‘help create robust and durable applications’ (Microsoft 2022, para. 3) which gives me further confidence in its capabilities. </p>
+  <p>Cool. But how will it actually work? How does it get the image from the internet? In a C# application you can make HTTP requests to the GitHub REST service (Microsoft 2021). This would allow you to get JavaScript Object Notation (JSON) data directly into your program. ‘JSON is a lightweight data-interchange format’ (json.org n.d.). After you deserialize the response (JSON data) from the repository, you can use that object for what you please within your program, for example, display the data in your console. This is useful if we want to gather data about what we are printing, or other useful data, for example, facts about what we are printing. </p>
+  <p>Another method of requesting data from a website using a URI (Uniform Resource Identifier) is by using the WebClient function (Microsoft 2022). The WebClient.DownloadFile method simply ‘downloads the resource with the specified URI to a local file’ (Microsoft 2022) which can then be used by the Automatic Picture Printer to send to the user’s printer. But where are the images coming from? You may ask. Cat images can be fetched <a href="https://docs.thecatapi.com/">here</a>, dog images can be fetched <a href="https://dog.ceo/dog-api/">here</a>, and NASA images can be fetched <a href="https://api.nasa.gov/">here</a>.</p>
+  <h4>Skills required</h4>
+  <p>To complete this project, I will need to be able to code in C#, do basic design, understand how to use APIs, understand JSON and other file/data types, and know how to put all these things together to produce the finished application. The creation of this product will also require much patience as these things can get very frustrating when they are not working as intended. Research skill will also be needed when I am unsure of how to go about parts of the development. This research can be done through reading documentation or interacting with coding communities on forums. </p>
+  <h4>Outcome</h4>  
+  <p>If the Automatic Picture Printer project was to be made, users would be able to have a fun and surprising product that can hopefully bring joy to their day. When they select a button, they will be greeted, in the real world, with a somewhat randomized image from the internet.</p>
 </div>
+</div>
+<br>
+<br>
 
+<!--Bibiliography section-->
+<div  style="padding-left: 20%;">
+  <h2>Bibliography</h2>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;'>Ali, A 2020, <em>Anyone Can Code : The Art and Science of Logical Creativity</em>, Milton : CRC Press LLC, Florida, USA.&nbsp;</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;'>Egil, J, Borge, R, 2020 <em>W3.cs</em>, W3 Schools, viewed 19 March 2022, <br>&lt;https://www.w3schools.com/w3css/4/w3.css&gt;&nbsp;</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;'>json.org n.d., <em>Introducing JSON,&nbsp;</em>viewed 22 March 2022, <br>&lt;https://www.json.org/json-en.html&gt;.</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;'>Microsoft 2022, <em>A tour of the C# language,&nbsp;</em>Microsoft Docs,<em>&nbsp;</em>viewed 22 March 2022, <br>&lt;https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/&gt;.</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;'>Microsoft 2022, <em>WebClient Class,&nbsp;</em>Microsoft Docs, viewed 22 March 2022, <br> &lt;https://docs.microsoft.com/en-us/dotnet/api/system.net.webclient?view=net-5.0&gt;.</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;'>Microsoft 2022, <em>WebClient.DownloadFile Method,&nbsp;</em>Microsoft Docs, viewed 22 March 2022, <br> &lt;https://docs.microsoft.com/en-us/dotnet/api/system.net.webclient.downloadfile?view=net-5.0&gt;.</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;'>Microsoft 2021, <em>Tutorial: Make HTTP requests in a .NET console app using C#,&nbsp;</em>Microsoft Docs, viewed 22 March 2022,  <br> &lt;https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/console-webapiclient&gt;.</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;'>RMIT University 2020,&nbsp;<em>Facts, figures and rankings</em>, RMIT University, viewed 29 February 2022, <br>  &lt;https://www.rmit.edu.au/about/facts-figures&gt;.</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;'>Seek 2022, <em>Salary insights,&nbsp;</em>Seek, viewed 8<sup>&nbsp;</sup>March 2022, <br> &lt;https://www.seek.com.au/job/56024312?type=promoted#sol=f1256655fe143444a5a6d31cda2ccbc68156deb0&gt;.</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;'>W3 Schools, <em>Start Page Template,&nbsp;</em>viewed 21 March 2022, <br> &lt;https://www.w3schools.com/w3css/tryw3css_templates_start_page.htm&gt;.</p>
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:8.0pt;margin-left:0cm;'>Weiss, E, Miller, K Mohan-Gibbons, H, Vela, C 2012, &lsquo;Why Did You Choose This Pet?: Adopters and Pet Selection Preferences in Five Animal Shelters in the United States&rsquo;,<em>&nbsp;Animals</em>, vol. 2, pp. 144-159.</p>
+
+</div>
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity">  
-  <div class="w3-xlarge w3-padding-32">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
- </div>
+
  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
 
